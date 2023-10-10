@@ -1,9 +1,8 @@
 /**
- * @file
+ * @module database
  * @author Marlon Lorram (https://github.com/marlonlorram)
  *
- * @description This module is responsible for establishing and managing the connection
- * to the PostgreSQL database.
+ * Establishes and manages the connection to the PostgreSQL database.
  */
 
 const { Pool } = require('pg');
