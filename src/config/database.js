@@ -2,7 +2,7 @@
  * @module database
  * @author Marlon Lorram (https://github.com/marlonlorram)
  *
- * Establishes and manages the connection to the PostgreSQL database.
+ * @description Establishes and manages the connection to the PostgreSQL database.
  */
 
 const { Pool } = require('pg');

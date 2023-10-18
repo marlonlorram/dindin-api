@@ -2,7 +2,7 @@
  * @module status_code
  * @author Marlon Lorram (https://github.com/marlonlorram)
  *
- * This module provides an enumeration of the most common HTTP status codes,
+ * @description This module provides an enumeration of the most common HTTP status codes,
  * categorized by response type.
  */
 

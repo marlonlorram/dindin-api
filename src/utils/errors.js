@@ -2,7 +2,7 @@
  * @module errors
  * @author Marlon Lorram (https://github.com/marlonlorram)
  *
- * Custom error utilities for response handling.
+ * @description Custom error utilities for response handling.
  */
 
 const { HTTP_STATUS } = require('./status_code');
