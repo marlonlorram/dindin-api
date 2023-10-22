@@ -40,7 +40,20 @@ const createUser = async (name, email, password) => {
   return result.rows[0];
 };
 
+/**
+ * Retrieve a user based on the provided email.
+ *
+ * @function
+ * @param {string} email - User's email.
+ * @return {Promise<Object|null>} User object if found, null otherwise.
+ */
+const findUserByEmail = async (email) => {
+  const result = await Pool.query(userQueries.findUserByEmail, [email]);
+  return result.rows[0] || null;
+};
+
 module.exports = {
   checkEmailExists,
   createUser,
+  findUserByEmail,
 };
