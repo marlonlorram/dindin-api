@@ -45,6 +45,19 @@ const userQueries = {
       name,
       email;
   `,
+
+  /**
+   * Retrieves a user based on the provided email.
+   */
+  findUserByEmail: `
+    SELECT
+      *
+    FROM
+      users
+    WHERE
+      email = $1
+    LIMIT 1;
+  `,
 };
 
 module.exports = userQueries;
