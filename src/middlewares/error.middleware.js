@@ -10,6 +10,7 @@ const { HTTP_STATUS } = require('../utils/status_code');
 /**
  * Responds to requests with appropriate information about the occurred error.
  *
+ * @function
  * @param {Object} err - Error object.
  * @param {Express.Request} req - The current request. (Not used directly.)
  * @param {Express.Response} res - The response to be sent.

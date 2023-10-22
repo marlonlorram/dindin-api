@@ -21,8 +21,9 @@ const register = handler(async (req) => await authService.register(req.body));
 /**
  * Handles the request to authenticate a user.
  *
+ * @function
  * @param {Express.Request} req - Request object.
- * @returns {Object} The authenticated user.
+ * @return {Object} The authenticated user.
  */
 const login = handler(async (req) => await authService.login(req.body));
 
