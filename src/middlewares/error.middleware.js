@@ -13,7 +13,7 @@ const { HTTP_STATUS } = require('../utils/status_code');
  * @param {Object} err - Error object.
  * @param {Express.Request} req - The current request. (Not used directly.)
  * @param {Express.Response} res - The response to be sent.
- * @param {Function} next The next middleware. (Not used directly.)
+ * @param {Function} next - The next middleware. (Not used directly.)
  */
 const errorHandler = (err, req, res, next) => {
   const statusCode = err.statusCode || HTTP_STATUS.INTERNAL_SERVER_ERROR;
